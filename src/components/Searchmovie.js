@@ -33,13 +33,14 @@ const Searchmovie = () => {
       </form>
 
       <div className='card-list'>
-
-      </div>
+      
       {
         movies.filter(movie => movie.poster_path ).map( movie => 
         <MovieInfo movie={movie} key={movie.id}/>
           )
       }
+
+      </div>
 
     </div>
   )
